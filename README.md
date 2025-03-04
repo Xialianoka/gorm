@@ -48,9 +48,9 @@ func (logger *MysqlGormLogger) CtxPrint(s *gorm.DB,values ...interface{}) {
   }
 }
 ```
-具体可以参见：https://github.com/e421083458/golang_common/blob/master/lib/mysql.go
+具体可以参见：https://github.com/Xialianoka/golang_common/blob/master/lib/mysql.go
 
 最终达成的效果为，我们go_gateway项目中的日志可以打印效果出sql来，并且与请求的trace一致：
 ```
-[INFO][2020-05-17T16:10:10.008][log.go:58] _com_mysql_success||level=sql||proc_time=0.000000000||affected_row=0||traceid=c0a803045ec0f161b1005f98104dc7b0||spanid=9e68f265380704bb||source=/Users/niuyufu/go/src/github.com/e421083458/go_gateway_demo/dao/service_info.go:92||current_time=2020-05-17 16:10:10||sql=SELECT count(*) FROM `gateway_service_info`  WHERE (is_delete=0) LIMIT 99999 OFFSET 0||cspanid=
+[INFO][2020-05-17T16:10:10.008][log.go:58] _com_mysql_success||level=sql||proc_time=0.000000000||affected_row=0||traceid=c0a803045ec0f161b1005f98104dc7b0||spanid=9e68f265380704bb||source=/Users/niuyufu/go/src/github.com/Xialianoka/go_gateway_demo/dao/service_info.go:92||current_time=2020-05-17 16:10:10||sql=SELECT count(*) FROM `gateway_service_info`  WHERE (is_delete=0) LIMIT 99999 OFFSET 0||cspanid=
 ```

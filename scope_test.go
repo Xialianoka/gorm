@@ -6,7 +6,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/e421083458/gorm"
+	"github.com/Xialianoka/gorm"
 )
 
 func NameIn1And2(d *gorm.DB) *gorm.DB {

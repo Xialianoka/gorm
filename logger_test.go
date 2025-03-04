@@ -6,7 +6,7 @@ import (
 	"crypto/md5"
 	"fmt"
 	"time"
-	"github.com/e421083458/gorm"
+	"github.com/Xialianoka/gorm"
 	"log"
 )
 
